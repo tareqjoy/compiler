@@ -1,0 +1,79 @@
+integer first=7,second=4,third=3,d#
+
+when first greater second
+start
+	when first greater third
+	start
+		d=first#
+		output[`First Highest`]#
+	end
+	nor
+	start
+		d=third#
+		output[`Third Highest`]#
+	end
+	#
+end
+nor
+start
+	when second greater third
+	start
+		d=second#
+		output[`Second Highest`]#
+	end
+	nor
+	start
+		d=third#
+		output[`Third Highest`]#
+	end
+	#
+end
+#
+
+
+d#
+
+decimal dec#
+
+check with [d]
+start
+	[first]
+	start
+		dec=3.1416#
+		output[`First and Highest value same`]#
+	end
+	[second]
+	start
+		dec=9.8#
+		output[`Second and Highest value same`]#
+	end
+	[third]
+	start
+		dec=6.67#
+		output[`Third and Highest value same`]#
+	end
+end
+#
+
+
+dec#
+
+
+integer a#
+
+loop a=0, a less d, a=a add 1
+start
+	5#
+end
+#
+
+
+a#
+
+
+integer myFunction[integer param1, integer param2]
+start
+	output[`in the function`]#
+	send 5
+end
+#
